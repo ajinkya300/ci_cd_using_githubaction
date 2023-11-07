@@ -55,6 +55,8 @@ This project is an example of hosting static website on S3 Bucket and using Clou
 
 * Now make some changes in your code and commit the changes and push the code to origin. Or just commit with visual code source control and click on Sync.
 
-* Open your GitHub Repository and go to Actions tab and open "Upload Website to S3 bucket" workflow and you will see there is new change pending to deployed. Just click on "Deploy". Now workflow will be start and when it gets completed you can refresh the site and check if changes are done. 
+* Open your GitHub Repository and go to Actions tab and open "Upload Website to S3 bucket" workflow and you will see there is new change pending to deployed. Just click on "Deploy". Now workflow will be start and when it gets completed you can refresh the site and check if changes are done.
 
-* Cauations: If you don't find the changes being made on your site just know that the cache content with CloudFront Distribution doesn't get refreshed instantly since it is by default set to 24H. So just go to CloudFront and navigate to your distribution and you will see Invalidate tab and click on it and create it and just type index.html in displayed pop up.
+* For the YAML script remember that you will need to specify your variables to avaoid any unwanted errors. On my part I used GitHub secrets
+
+* Cauations: If you don't find the changes being made on your site just know that the cache content with CloudFront Distribution doesn't get refreshed instantly since it is by default set to 24H. So just go to CloudFront and navigate` to your distribution and you will see Invalidate tab and click on it and create it and just type index.html in displayed pop up.
